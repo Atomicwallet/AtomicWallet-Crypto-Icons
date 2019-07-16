@@ -1,0 +1,2149 @@
+@font-face {
+  font-family: AtomicWallet;
+  src: url("./atomicwallet.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+/* use !important to prevent issues with browser extensions that change fonts */
+  font-family: atomicwallet !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: normal;
+  font-size: 3em;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ethTokenDefault {
+  background: linear-gradient(to bottom, #e7f8ff 0%, #627eea 100%);
+}
+.icon-ethTokenDefault:before {
+  content: "\e930";
+}
+
+.icon-default {
+  background: linear-gradient(to bottom, #e4c079 0%, #bd974c 100%);
+}
+.icon-default:before {
+  content: "\e93a";
+}
+
+.icon-zrx {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-zrx:before {
+  content: "\e901";
+}
+.icon-zil {
+  background: linear-gradient(to bottom, #49c1bf 0%, #298e97 100%);
+}
+.icon-zil:before {
+  content: "\e902";
+}
+.icon-zec {
+  background: linear-gradient(to bottom, #f8d175 0%, #ecb244 100%);
+}
+.icon-zec:before {
+  content: "\e903";
+}
+.icon-xtz {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-xtz:before {
+  content: "\e904";
+}
+.icon-xrp {
+  background: linear-gradient(to bottom, #7db9e8 0%, #2989d8 100%);
+}
+.icon-xrp:before {
+  content: "\e905";
+}
+.icon-wings {
+  background: linear-gradient(to bottom, #93f2ff 0%, #0dc9f7 100%);
+}
+.icon-wings:before {
+  content: "\e907";
+}
+.icon-wax {
+  background: linear-gradient(to bottom, #ffcd41 0%, #ff6b00 100%);
+}
+.icon-wax:before {
+  content: "\e908";
+}
+.icon-vib {
+  background: linear-gradient(to bottom, #ed5250 0%, #ff1f43 100%);
+}
+.icon-vib:before {
+  content: "\e909";
+}
+.icon-usdc {
+  background: linear-gradient(to bottom, #3998FF 0%, #2775CA 100%);
+}
+.icon-usdc:before {
+  content: "\ea88";
+}
+.icon-tusd {
+  background: linear-gradient(to bottom, #6cb0fd 0%, #494dfc 100%);
+}
+.icon-tusd:before {
+  content: "\e90b";
+}
+.icon-trx {
+  background: linear-gradient(to bottom, #fc2d38 0%, #a50009 100%);
+}
+.icon-trx:before {
+  content: "\e90c";
+}
+.icon-trst {
+  background: linear-gradient(to bottom, #8beeca 0%, #63c6bb 100%);
+}
+.icon-trst:before {
+  content: "\e90d";
+}
+.icon-swt {
+  background: linear-gradient(to bottom, #fde785 0%, #efd96f 100%);
+}
+.icon-swt:before {
+  content: "\e90e";
+}
+.icon-stx {
+  background: linear-gradient(to bottom, #51b5f8 0%, #7020f0 100%);
+}
+.icon-stx:before {
+  content: "\e90f";
+}
+.icon-storj {
+  background: linear-gradient(to bottom, #61b3fa 0%, #2683ff 100%);
+}
+.icon-storj:before {
+  content: "\e910";
+}
+.icon-snm {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-snm:before {
+  content: "\e911";
+}
+.icon-skin {
+  background: linear-gradient(to bottom, #00e9f1 0%, #005584 100%);
+}
+.icon-skin:before {
+  content: "\e912";
+}
+.icon-salt {
+  background: linear-gradient(to bottom, #1beef4 0%, #02e1c9 100%);
+}
+.icon-salt:before {
+  content: "\e913";
+}
+.icon-rlc {
+  background: linear-gradient(to bottom, #fde785 0%, #ffd800 100%);
+}
+.icon-rlc:before {
+  content: "\e914";
+}
+.icon-r {
+  background: linear-gradient(to bottom, #e4007f 0%, #8900bf 100%);
+}
+.icon-r:before {
+  content: "\e915";
+}
+.icon-rep {
+  background: linear-gradient(to bottom, #ff6c88 0%, #6e2f5e 100%);
+}
+.icon-rep:before {
+  content: "\e916";
+}
+.icon-rcn {
+  background: linear-gradient(to bottom, #00a4ff 0%, #3555f9 100%);
+}
+.icon-rcn:before {
+  content: "\e917";
+}
+.icon-qtum {
+  background: linear-gradient(to bottom, #41d4fc 0%, #2e9ad0 100%);
+}
+.icon-qtum:before {
+  content: "\e918";
+}
+.icon-ptoy {
+  background: linear-gradient(to bottom, #ed5250 0%, #db0029 100%);
+}
+.icon-ptoy:before {
+  content: "\e919";
+}
+.icon-ppt {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-ppt:before {
+  content: "\e91a";
+}
+.icon-powr {
+  background: linear-gradient(to bottom, #8beeca 0%, #05bca9 100%);
+}
+.icon-powr:before {
+  content: "\e91b";
+}
+.icon-poly {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-poly:before {
+  content: "\e91c";
+}
+.icon-pay {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-pay:before {
+  content: "\e91d";
+}
+.icon-pax {
+  background: linear-gradient(to bottom, #3cd796 0%, #0f754d 100%);
+}
+.icon-pax:before {
+  content: "\e91e";
+}
+.icon-omg {
+  background: linear-gradient(to bottom, #00a4ff 0%, #1a53f0 100%);
+}
+.icon-omg:before {
+  content: "\e91f";
+}
+.icon-nmr {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-nmr:before {
+  content: "\e920";
+}
+.icon-nexo {
+  background: linear-gradient(to bottom, #60befe 0%, #2853c3 100%);
+}
+.icon-nexo:before {
+  content: "\e921";
+}
+.icon-mln {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-mln:before {
+  content: "\e922";
+}
+.icon-mkr {
+  background: linear-gradient(to bottom, #1abc9c 0%, #546979 100%);
+}
+.icon-mkr:before {
+  content: "\e923";
+}
+.icon-mco {
+  background: linear-gradient(to bottom, #61a7e2 0%, #103f68 100%);
+}
+.icon-mco:before {
+  content: "\e924";
+}
+.icon-mana {
+  background: linear-gradient(to bottom, #ec9250 0%, #35312e 100%);
+}
+.icon-mana:before {
+  content: "\e925";
+}
+.icon-lun {
+  background: linear-gradient(to bottom, #f85f7d 0%, #f14e10 100%);
+}
+.icon-lun:before {
+  content: "\e926";
+}
+.icon-ltc {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-ltc:before {
+  content: "\e927";
+}
+.icon-link {
+  background: linear-gradient(to bottom, #41d4fc 0%, #3fa0f1 100%);
+}
+.icon-link:before {
+  content: "\e928";
+}
+.icon-knc {
+  background: linear-gradient(to bottom, #6ebb9d 0%, #3297ae 100%);
+}
+.icon-knc:before {
+  content: "\e929";
+}
+.icon-hmq {
+  background: linear-gradient(to bottom, #9cc1ef 0%, #58a1fc 100%);
+}
+.icon-hmq:before {
+  content: "\e92a";
+}
+.icon-gusd {
+  background: linear-gradient(to bottom, #26ddf9 0%, #0490a6 100%);
+}
+.icon-gusd:before {
+  content: "\e92b";
+}
+.icon-gup {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-gup:before {
+  content: "\e92c";
+}
+.icon-gnt {
+  background: linear-gradient(to bottom, #01d3e0 0%, #114cc0 100%);
+}
+.icon-gnt:before {
+  content: "\e92d";
+}
+.icon-gno {
+  background: linear-gradient(to bottom, #42d4ee 0%, #00a6c4 100%);
+}
+.icon-gno:before {
+  content: "\e92e";
+}
+.icon-fun {
+  background: linear-gradient(to bottom, #ff6c88 0%, #f1385b 100%);
+}
+.icon-fun:before {
+  content: "\e92f";
+}
+
+.icon-eth {
+  background: linear-gradient(to bottom, #76d4ff 0%, #627eea 100%);
+}
+.icon-eth:before {
+  content: "\e931";
+}
+.icon-enj {
+  background: linear-gradient(to bottom, #da58dc 0%, #6d84d6 100%);
+}
+.icon-enj:before {
+  content: "\e932";
+}
+.icon-elf {
+  background: linear-gradient(to bottom, #01d3e0 0%, #2b5eba 100%);
+}
+.icon-elf:before {
+  content: "\e933";
+}
+.icon-edg {
+  background: linear-gradient(to bottom, #bd83ff 0%, #682bac 100%);
+}
+.icon-edg:before {
+  content: "\e934";
+}
+.icon-doge {
+  background: linear-gradient(to bottom, #e0cd81 0%, #bb9f32 100%);
+}
+.icon-doge:before {
+  content: "\e935";
+}
+.icon-dnt {
+  background: linear-gradient(to bottom, #4ee0ea 0%, #4358d3 100%);
+}
+.icon-dnt:before {
+  content: "\e936";
+}
+.icon-dgd {
+  background: linear-gradient(to bottom, #fde785 0%, #f4d029 100%);
+}
+.icon-dgd:before {
+  content: "\e937";
+}
+.icon-dgb {
+  background: linear-gradient(to bottom, #8fd4ff 0%, #003cff 100%);
+}
+.icon-dgb:before {
+  content: "\e938";
+}
+.icon-dent {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-dent:before {
+  content: "\e939";
+}
+.icon-dcn {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-dcn:before {
+  content: "\e93b";
+}
+.icon-dash {
+  background: linear-gradient(to bottom, #6ac1ff 0%, #2677ba 100%);
+}
+.icon-dash:before {
+  content: "\e93c";
+}
+.icon-dai {
+  background: linear-gradient(to bottom, #ffd343 0%, #ffb300 100%);
+}
+.icon-dai:before {
+  content: "\e93d";
+}
+.icon-cvc {
+  background: linear-gradient(to bottom, #72e776 0%, #3ab03e 100%);
+}
+.icon-cvc:before {
+  content: "\e93e";
+}
+.icon-btg {
+  background: linear-gradient(to bottom, #ffe231 0%, #ee8707 100%);
+}
+.icon-btg:before {
+  content: "\e93f";
+}
+.icon-btc {
+  background: linear-gradient(to bottom, #ffb862 0%, #f76a1a 100%);
+}
+.icon-btc:before {
+  content: "\e940";
+}
+.icon-bsv {
+  background: linear-gradient(to bottom, #ffb862 0%, #f76a1a 100%);
+}
+.icon-bsv:before {
+  content: "\e950";
+}
+.icon-bch {
+  background: linear-gradient(to bottom, #ffb862 0%, #f76a1a 100%);
+}
+.icon-bch:before {
+  content: "\e94e";
+}
+.icon-brd {
+  background: linear-gradient(to bottom, #ffb178 0%, #f85b3f 100%);
+}
+.icon-brd:before {
+  content: "\e941";
+}
+.icon-bnt {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-bnt:before {
+  content: "\e942";
+}
+.icon-bnb {
+  background: linear-gradient(to bottom, #f8d175 0%, #f4c148 100%);
+}
+.icon-bnb:before {
+  content: "\e943";
+}
+.icon-bkx {
+  background: linear-gradient(to bottom, #fff 0%, #0da9fe 100%);
+}
+.icon-bkx:before {
+  content: "\e944";
+}
+.icon-bat {
+  background: linear-gradient(to bottom, #ec8150 0%, #ff5000 100%);
+}
+.icon-bat:before {
+  content: "\e945";
+}
+.icon-awc {
+  background: linear-gradient(to bottom, #42c1fd 0%, #1f8efa 100%);
+}
+.icon-awc:before {
+  content: "\e946";
+}
+.icon-arn {
+  background: linear-gradient(to bottom, #01d3e0 0%, #106ea5 100%);
+}
+.icon-arn:before {
+  content: "\e947";
+}
+.icon-ant {
+  background: linear-gradient(to bottom, #bbecf0 0%, #2cd3e1 100%);
+}
+.icon-ant:before {
+  content: "\e948";
+}
+.icon-ae {
+  background: linear-gradient(to bottom, #ff5785 0%, #de3f6b 100%);
+}
+.icon-ae:before {
+  content: "\e949";
+}
+.icon-adx {
+  background: linear-gradient(to bottom, #4fa6eb 0%, #1b75bc 100%);
+}
+.icon-adx:before {
+  content: "\e94a";
+
+.icon-eurs {
+  background: linear-gradient(to bottom, #57beff 0%, #2468e3 100%);
+}
+.icon-eurs:before {
+  content: "\e951";
+}
+.icon-mith {
+  background: linear-gradient(to bottom, #57beff 0%, #2468e3 100%);
+}
+.icon-mith:before {
+  content: "\e952";
+}
+.icon-pma {
+  background: linear-gradient(to bottom, #58a9ff 0%, #2b85e3 100%);
+}
+
+.icon-300 {
+  background: linear-gradient(to bottom, #e4c079 0%, #9c6114 100%);
+}
+.icon-300:before {
+  content: "\e955";
+}
+.icon-abyss {
+  background: linear-gradient(to bottom, #2f8dfa 0%, #0047bc 100%);
+}
+.icon-abyss:before {
+  content: "\e956";
+}
+.icon-ada {
+  background: linear-gradient(to bottom, #68A8FF 0%, #197BFF 100%);
+}
+.icon-ada:before {
+  content: "\e957";
+}
+.icon-adst {
+  background: linear-gradient(to bottom, #7ee6fe 0%, #2c4df4 100%);
+}
+.icon-adst:before {
+  content: "\e958";
+}
+.icon-adt {
+  background: linear-gradient(to bottom, #51b5f8 0%, #8d24dc 100%);
+}
+.icon-adt:before {
+  content: "\e959";
+}
+.icon-aidoc {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-aidoc:before {
+  content: "\e95a";
+}
+.icon-aion {
+  background: linear-gradient(to bottom, #b7f1ff 0%, #00bfec 100%);
+}
+.icon-aion:before {
+  content: "\e95b";
+}
+.icon-air {
+  background: linear-gradient(to bottom, #00a7db 0%, #7268ff 100%);
+}
+.icon-air:before {
+  content: "\e95c";
+}
+.icon-alis {
+  background: linear-gradient(to bottom, #8c9af3 0%, #4d5cbe 100%);
+}
+.icon-alis:before {
+  content: "\e95d";
+}
+.icon-amb {
+  background: linear-gradient(to bottom, #22b5ff 0%, #721ff3 100%);
+}
+.icon-amb:before {
+  content: "\e95e";
+}
+.icon-amis {
+  background: linear-gradient(to bottom, #c08486 0%, #894a4c 100%);
+}
+.icon-amis:before {
+  content: "\e95f";
+}
+.icon-appc {
+  background: linear-gradient(to bottom, #fd9055 0%, #ff6b7a 100%);
+}
+.icon-appc:before {
+  content: "\e960";
+}
+.icon-apt {
+  background: linear-gradient(to bottom, #6ac1ff 0%, #006ebe 100%);
+}
+.icon-apt:before {
+  content: "\e961";
+}
+.icon-arc {
+  background: linear-gradient(to bottom, #61f4d7 0%, #00b19d 100%);
+}
+.icon-arc:before {
+  content: "\e962";
+}
+.icon-art {
+  background: linear-gradient(to bottom, #e4c079 0%, #bd974c 100%);
+}
+.icon-art:before {
+  content: "\e963";
+}
+.icon-ast {
+  background: linear-gradient(to bottom, #00a4ff 0%, #5e72eb 100%);
+}
+.icon-ast:before {
+  content: "\e964";
+}
+.icon-ath {
+  background: linear-gradient(to bottom, #61b3fa 0%, #5492cc 100%);
+}
+.icon-ath:before {
+  content: "\e965";
+}
+.icon-atl {
+  background: linear-gradient(to bottom, #61b3fa 0%, #2280c3 100%);
+}
+.icon-atl:before {
+  content: "\e966";
+}
+.icon-atm {
+  background: linear-gradient(to bottom, #3d87ff 0%, #e3372d 100%);
+}
+.icon-atm:before {
+  content: "\e967";
+}
+.icon-ava {
+  background: linear-gradient(to bottom, #71e2e6 0%, #6198f3 100%);
+}
+.icon-ava:before {
+  content: "\e968";
+}
+.icon-avt {
+  background: linear-gradient(to bottom, #34a5ff 0%, #4818f6 100%);
+}
+.icon-avt:before {
+  content: "\e969";
+}
+.icon-awr {
+  background: linear-gradient(to bottom, #fee250 0%, #ff7700 100%);
+}
+.icon-awr:before {
+  content: "\e96a";
+}
+.icon-bcap {
+  background: linear-gradient(to bottom, #6fd1f2 0%, #36beeb 100%);
+}
+.icon-bcap:before {
+  content: "\e96b";
+}
+.icon-bcd {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-bcd:before {
+  content: "\e96c";
+}
+.icon-bcpt {
+  background: linear-gradient(to bottom, #f5d780 0%, #ff7511 100%);
+}
+.icon-bcpt:before {
+  content: "\e96e";
+}
+.icon-bet {
+  background: linear-gradient(to bottom, #ee9828 0%, #ec8150 100%);
+}
+.icon-bet:before {
+  content: "\e96f";
+}
+.icon-bix {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-bix:before {
+  content: "\e970";
+}
+.icon-blx {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-blx:before {
+  content: "\e971";
+}
+.icon-blz {
+  background: linear-gradient(to bottom, #ec9250 0%, #18578c 100%);
+}
+.icon-blz:before {
+  content: "\e972";
+}
+.icon-bmc {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-bmc:before {
+  content: "\e973";
+}
+.icon-bmt {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-bmt:before {
+  content: "\e974";
+}
+.icon-bnc {
+  background: linear-gradient(to bottom, #f7b658 0%, #2282aa 100%);
+}
+.icon-bnc:before {
+  content: "\e975";
+}
+.icon-bop {
+  background: linear-gradient(to bottom, #fde785 0%, #ffdc59 100%);
+}
+.icon-bop:before {
+  content: "\e976";
+}
+.icon-bot {
+  background: linear-gradient(to bottom, #00f0ff 0%, #1400ff 100%);
+}
+.icon-bot:before {
+  content: "\e977";
+}
+.icon-bq {
+  background: linear-gradient(to bottom, #41d4fc 0%, #2e9ccb 100%);
+}
+.icon-bq:before {
+  content: "\e978";
+}
+.icon-bqx {
+  background: linear-gradient(to bottom, #70d463 0%, #2aa000 100%);
+}
+.icon-bqx:before {
+  content: "\e979";
+}
+.icon-brat {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-brat:before {
+  content: "\e97a";
+}
+.icon-btcny {
+  background: linear-gradient(to bottom, #6fd1f2 0%, #36beeb 100%);
+}
+.icon-btcny:before {
+  content: "\e97b";
+}
+.icon-bte {
+  background: linear-gradient(to bottom, #ffb900 0%, #d70c3a 100%);
+}
+.icon-bte:before {
+  content: "\e97c";
+}
+.icon-btm {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-btm:before {
+  content: "\e97d";
+}
+.icon-c20 {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-c20:before {
+  content: "\e97e";
+}
+.icon-cag {
+  background: linear-gradient(to bottom, #16e0da 0%, #0d9fd3 100%);
+}
+.icon-cag:before {
+  content: "\e97f";
+}
+.icon-cat {
+  background: linear-gradient(to bottom, #fef967 0%, #fc8e00 100%);
+}
+.icon-cat:before {
+  content: "\e980";
+}
+.icon-ccc {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-ccc:before {
+  content: "\e981";
+}
+.icon-cdt {
+  background: linear-gradient(to bottom, #5bd1f1 0%, #41c2fc 100%);
+}
+.icon-cdt:before {
+  content: "\e982";
+}
+.icon-cfi {
+  background: linear-gradient(to bottom, #5bd1f1 0%, #41c2fc 100%);
+}
+.icon-cfi:before {
+  content: "\e983";
+}
+.icon-cfun {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-cfun:before {
+  content: "\e984";
+}
+.icon-cmc {
+  background: linear-gradient(to bottom, #fef967 0%, #fc8e00 100%);
+}
+.icon-cmc:before {
+  content: "\e985";
+}
+.icon-cmt {
+  background: linear-gradient(to bottom, #dabc66 0%, #9a7131 100%);
+}
+.icon-cmt:before {
+  content: "\e986";
+}
+.icon-cnd {
+  background: linear-gradient(to bottom, #5bd1f1 0%, #41c2fc 100%);
+}
+.icon-cnd:before {
+  content: "\e987";
+}
+.icon-cob {
+  background: linear-gradient(to bottom, #71d9c2 0%, #13bf99 100%);
+}
+.icon-cob:before {
+  content: "\e988";
+}
+.icon-crb {
+  background: linear-gradient(to bottom, #90baea 0%, #2c3e53 100%);
+}
+.icon-crb:before {
+  content: "\e989";
+}
+.icon-credo {
+  background: linear-gradient(to bottom, #61a7e2 0%, #4189c6 100%);
+}
+.icon-credo:before {
+  content: "\e98a";
+}
+.icon-cs {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-cs:before {
+  content: "\e98b";
+}
+.icon-csno {
+  background: linear-gradient(to bottom, #7fdef8 0%, #41d4fc 100%);
+}
+.icon-csno:before {
+  content: "\e98c";
+}
+.icon-ctl {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-ctl:before {
+  content: "\e98e";
+}
+.icon-ctr {
+  background: linear-gradient(to bottom, #f8d175 0%, #ffc029 100%);
+}
+.icon-ctr:before {
+  content: "\e98f";
+}
+.icon-dab {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-dab:before {
+  content: "\e990";
+}
+.icon-dalc {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-dalc:before {
+  content: "\e991";
+}
+.icon-dao {
+  background: linear-gradient(to bottom, #ed5250 0%, #f82636 100%);
+}
+.icon-dao:before {
+  content: "\e992";
+}
+.icon-data {
+  background: linear-gradient(to bottom, #f12348 0%, #302d95 100%);
+}
+.icon-data:before {
+  content: "\e993";
+}
+.icon-dcr {
+  background: linear-gradient(to bottom, #2ed6a1 0%, #5bc7af 100%);
+}
+.icon-dcr:before {
+  content: "\e994";
+}
+.icon-ddf {
+  background: linear-gradient(to bottom, #efa900 0%, #394552 100%);
+}
+.icon-ddf:before {
+  content: "\e995";
+}
+.icon-dgx-10 {
+  background: linear-gradient(to bottom, #fde785 0%, #f4d029 100%);
+}
+.icon-dgx-10:before {
+  content: "\e996";
+}
+.icon-dice {
+  background: linear-gradient(to bottom, #70ce49 0%, #408fb2 100%);
+}
+.icon-dice:before {
+  content: "\e997";
+}
+.icon-dlt {
+  background: linear-gradient(to bottom, #efa893 0%, #753db2 100%);
+}
+.icon-dlt:before {
+  content: "\e998";
+}
+.icon-dna {
+  background: linear-gradient(to bottom, #23cffe 0%, #0686bd 100%);
+}
+.icon-dna:before {
+  content: "\e999";
+}
+.icon-dpp {
+  background: linear-gradient(to bottom, #f1ff91 0%, #b9cc32 100%);
+}
+.icon-dpp:before {
+  content: "\e99a";
+}
+.icon-dpy {
+  background: linear-gradient(to bottom, #4d79ee 0%, #304ea5 100%);
+}
+.icon-dpy:before {
+  content: "\e99b";
+}
+.icon-drgn {
+  background: linear-gradient(to bottom, #fa6666 0%, #c91111 100%);
+}
+.icon-drgn:before {
+  content: "\e99c";
+}
+.icon-drop {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-drop:before {
+  content: "\e99d";
+}
+.icon-drp {
+  background: linear-gradient(to bottom, #56a6dd 0%, #5d2a74 100%);
+}
+.icon-drp:before {
+  content: "\e99e";
+}
+.icon-drt {
+  background: linear-gradient(to bottom, #e75b39 0%, #e95290 100%);
+}
+.icon-drt:before {
+  content: "\e99f";
+}
+.icon-dta {
+  background: linear-gradient(to bottom, #70d463 0%, #2470d4 100%);
+}
+.icon-dta:before {
+  content: "\e9a0";
+}
+.icon-ecn {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-ecn:before {
+  content: "\e9a2";
+}
+.icon-edo {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-edo:before {
+  content: "\e9a3";
+}
+.icon-eht {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-eht:before {
+  content: "\e9a4";
+}
+.icon-ekt {
+  background: linear-gradient(to bottom, #00c0f9 0%, #37c862 100%);
+}
+.icon-ekt:before {
+  content: "\e9a5";
+}
+.icon-elix {
+  background: linear-gradient(to bottom, #00aded 0%, #295ba7 100%);
+}
+.icon-elix:before {
+  content: "\e9a6";
+}
+.icon-emv {
+  background: linear-gradient(to bottom, #f7e696 0%, #f4f129 100%);
+}
+.icon-emv:before {
+  content: "\e9a7";
+}
+.icon-eng {
+  background: linear-gradient(to bottom, #61f4d7 0%, #1abc9c 100%);
+}
+.icon-eng:before {
+  content: "\e9a8";
+}
+.icon-ent {
+  background: linear-gradient(to bottom, #ff00ef 0%, #5500ff 100%);
+}
+.icon-ent:before {
+  content: "\e9a9";
+}
+.icon-eos {
+  background: linear-gradient(to bottom, #76d4ff 0%, #ffcdb0 100%);
+}
+.icon-eos:before {
+  content: "\e9aa";
+}
+.icon-etbs {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-etbs:before {
+  content: "\e9ab";
+}
+.icon-etc {
+  background: linear-gradient(to bottom, #11ffe2 0%, #00c51f 100%);
+}
+.icon-etc:before {
+  content: "\e9ac";
+}
+.icon-ethos {
+  background: linear-gradient(to bottom, #00ffbb 0%, #00cfab 100%);
+}
+.icon-ethos:before {
+  content: "\e9ad";
+}
+.icon-eurt {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-eurt:before {
+  content: "\e9ae";
+}
+.icon-evx {
+  background: linear-gradient(to bottom, #80bbff 0%, #004da7 100%);
+}
+.icon-evx:before {
+  content: "\e9af";
+}
+.icon-fam {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-fam:before {
+  content: "\e9b0";
+}
+.icon-frd {
+  background: linear-gradient(to bottom, #dc3045 0%, #a01a33 100%);
+}
+.icon-frd:before {
+  content: "\e9b1";
+}
+.icon-ftc {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-ftc:before {
+  content: "\e9b2";
+}
+.icon-fuel {
+  background: linear-gradient(to bottom, #b8c9d8 0%, #075396 100%);
+}
+.icon-fuel:before {
+  content: "\e9b3";
+}
+.icon-fyn {
+  background: linear-gradient(to bottom, #fba000 0%, #da5919 100%);
+}
+.icon-fyn:before {
+  content: "\e9b4";
+}
+.icon-gbt {
+  background: linear-gradient(to bottom, #dc3045 0%, #5a1414 100%);
+}
+.icon-gbt:before {
+  content: "\e9b5";
+}
+.icon-geld {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-geld:before {
+  content: "\e9b6";
+}
+.icon-gifto {
+  background: linear-gradient(to bottom, #fc51ff 0%, #7f27ff 100%);
+}
+.icon-gifto:before {
+  content: "\e9b7";
+}
+.icon-gnx {
+  background: linear-gradient(to bottom, #f8dc19 0%, #4100fb 100%);
+}
+.icon-gnx:before {
+  content: "\e9b8";
+}
+.icon-grid {
+  background: linear-gradient(to bottom, #27c9ff 0%, #6cbdd8 100%);
+}
+.icon-grid:before {
+  content: "\e9b9";
+}
+.icon-gtc {
+  background: linear-gradient(to bottom, #56fbdb 0%, #ff8340 100%);
+}
+.icon-gtc:before {
+  content: "\e9ba";
+}
+.icon-gtkt {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-gtkt:before {
+  content: "\e9bb";
+}
+.icon-gvt {
+  background: linear-gradient(to bottom, #5bc7af 0%, #00beb0 100%);
+}
+.icon-gvt:before {
+  content: "\e9bc";
+}
+.icon-h2o {
+  background: linear-gradient(to bottom, #6cbdd8 0%, #0199dd 100%);
+}
+.icon-h2o:before {
+  content: "\e9bd";
+}
+.icon-hgt {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-hgt:before {
+  content: "\e9be";
+}
+.icon-hkg {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-hkg:before {
+  content: "\e9bf";
+}
+.icon-hlc {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-hlc:before {
+  content: "\e9c0";
+}
+.icon-hot {
+  background: linear-gradient(to bottom, #00edff 0%, #00838d 100%);
+}
+.icon-hot:before {
+  content: "\e9c1";
+}
+.icon-hpb {
+  background: linear-gradient(to bottom, #31f1fc 0%, #0579bf 100%);
+}
+.icon-hpb:before {
+  content: "\e9c2";
+}
+.icon-hst {
+  background: linear-gradient(to bottom, #81a5fd 0%, #1254ce 100%);
+}
+.icon-hst:before {
+  content: "\e9c3";
+}
+.icon-hvn {
+  background: linear-gradient(to bottom, #4db7e4 0%, #1887b1 100%);
+}
+.icon-hvn:before {
+  content: "\e9c4";
+}
+.icon-ice {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-ice:before {
+  content: "\e9c5";
+}
+.icon-icn {
+  background: linear-gradient(to bottom, #84b1c4 0%, #4c6f8c 100%);
+}
+.icon-icn:before {
+  content: "\e9c6";
+}
+.icon-icos {
+  background: linear-gradient(to bottom, #50e3c2 0%, #23c8c6 100%);
+}
+.icon-icos:before {
+  content: "\e9c7";
+}
+.icon-icx {
+  background: linear-gradient(to bottom, #8beeca 0%, #1fc5c9 100%);
+}
+.icon-icx:before {
+  content: "\e9c8";
+}
+.icon-idea {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-idea:before {
+  content: "\e9c9";
+}
+.icon-ift {
+  background: linear-gradient(to bottom, #02e1c9 0%, #01a5f1 100%);
+}
+.icon-ift:before {
+  content: "\e9ca";
+}
+.icon-ikb {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-ikb:before {
+  content: "\e9cb";
+}
+.icon-imt {
+  background: linear-gradient(to bottom, #00a97c 0%, #0088cc 100%);
+}
+.icon-imt:before {
+  content: "\e9cc";
+}
+.icon-ind {
+  background: linear-gradient(to bottom, #30d2ff 0%, #8678ff 100%);
+}
+.icon-ind:before {
+  content: "\e9cd";
+}
+.icon-ink {
+  background: linear-gradient(to bottom, #ff008a 0%, #df1616 100%);
+}
+.icon-ink:before {
+  content: "\e9cf";
+}
+.icon-ins {
+  background: linear-gradient(to bottom, #b2a3f6 0%, #fc4c06 100%);
+}
+.icon-ins:before {
+  content: "\e9d0";
+}
+.icon-iost {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-iost:before {
+  content: "\e9d2";
+}
+.icon-iota {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-iota:before {
+  content: "\e9d3";
+}
+.icon-itc {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-itc:before {
+  content: "\e9d4";
+}
+.icon-itt {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-itt:before {
+  content: "\e9d5";
+}
+.icon-ixt {
+  background: linear-gradient(to bottom, #26c7dc 0%, #0e5888 100%);
+}
+.icon-ixt:before {
+  content: "\e9d6";
+}
+.icon-jet {
+  background: linear-gradient(to bottom, #e4c079 0%, #9c6114 100%);
+}
+.icon-jet:before {
+  content: "\e9d7";
+}
+.icon-jnt {
+  background: linear-gradient(to bottom, #00a4ff 0%, #0050db 100%);
+}
+.icon-jnt:before {
+  content: "\e9d8";
+}
+.icon-kick {
+  background: linear-gradient(to bottom, #23bbe3 0%, #5e4598 100%);
+}
+.icon-kick:before {
+  content: "\e9d9";
+}
+.icon-la {
+  background: linear-gradient(to bottom, #6bd9ea 0%, #0096ac 100%);
+}
+.icon-la:before {
+  content: "\e9db";
+}
+.icon-latx {
+  background: linear-gradient(to bottom, #6cf000 0%, #70d463 100%);
+}
+.icon-latx:before {
+  content: "\e9dc";
+}
+.icon-lend {
+  background: linear-gradient(to bottom, #0dadc9 0%, #1c91cc 100%);
+}
+.icon-lend:before {
+  content: "\e9dd";
+}
+.icon-lev {
+  background: linear-gradient(to bottom, #ffcd05 0%, #fc7500 100%);
+}
+.icon-lev:before {
+  content: "\e9de";
+}
+.icon-life {
+  background: linear-gradient(to bottom, #5bc7af 0%, #16bc9c 100%);
+}
+.icon-life:before {
+  content: "\e9df";
+}
+.icon-link2 {
+  background: linear-gradient(to bottom, #41d4fc 0%, #3fa0f1 100%);
+}
+.icon-link2:before {
+  content: "\e9e0";
+}
+.icon-lnc {
+  background: linear-gradient(to bottom, #41d4fc 0%, #3fa0f1 100%);
+}
+.icon-lnc:before {
+  content: "\e9e1";
+}
+.icon-lok {
+  background: linear-gradient(to bottom, #6cf000 0%, #108329 100%);
+}
+.icon-lok:before {
+  content: "\e9e2";
+}
+.icon-lpg {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-lpg:before {
+  content: "\e9e3";
+}
+.icon-lrc {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-lrc:before {
+  content: "\e9e4";
+}
+.icon-lstr {
+  background: linear-gradient(to bottom, #d600ff 0%, #7300ff 100%);
+}
+.icon-lstr:before {
+  content: "\e9e5";
+}
+.icon-ltc {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-ltc:before {
+  content: "\e9e6";
+}
+.icon-luck {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-luck:before {
+  content: "\e9e7";
+}
+.icon-mbrs {
+  background: linear-gradient(to bottom, #dc3045 0%, #ca0000 100%);
+}
+.icon-mbrs:before {
+  content: "\e9e8";
+}
+.icon-mcap {
+  background: linear-gradient(to bottom, #5bc7af 0%, #033b4a 100%);
+}
+.icon-mcap:before {
+  content: "\e9e9";
+}
+.icon-mci {
+  background: linear-gradient(to bottom, #41d4fc 0%, #1db1ed 100%);
+}
+.icon-mci:before {
+  content: "\e9ea";
+}
+.icon-mda {
+  background: linear-gradient(to bottom, #70d463 0%, #01a64f 100%);
+}
+.icon-mda:before {
+  content: "\e9eb";
+}
+.icon-mds {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-mds:before {
+  content: "\e9ec";
+}
+.icon-mee {
+  background: linear-gradient(to bottom, #eb2d84 0%, #7300ff 100%);
+}
+.icon-mee:before {
+  content: "\e9ed";
+}
+.icon-mgo {
+  background: linear-gradient(to bottom, #fd3b38 0%, #2dd9ff 100%);
+}
+.icon-mgo:before {
+  content: "\e9ee";
+}
+.icon-mit {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-mit:before {
+  content: "\e9ef";
+}
+.icon-mne {
+  background: linear-gradient(to bottom, #00c8dc 0%, #087bdc 100%);
+}
+.icon-mne:before {
+  content: "\e9f0";
+}
+.icon-mod {
+  background: linear-gradient(to bottom, #49c0f3 0%, #0057ff 100%);
+}
+.icon-mod:before {
+  content: "\e9f1";
+}
+.icon-mof {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-mof:before {
+  content: "\e9f2";
+}
+.icon-mrv {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-mrv:before {
+  content: "\e9f3";
+}
+.icon-msp {
+  background: linear-gradient(to bottom, #e85d53 0%, #2f0735 100%);
+}
+.icon-msp:before {
+  content: "\e9f4";
+}
+.icon-mth {
+  background: linear-gradient(to bottom, #16ed8c 0%, #0767fc 100%);
+}
+.icon-mth:before {
+  content: "\e9f5";
+}
+.icon-mtl {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-mtl:before {
+  content: "\e9f6";
+}
+.icon-mtn {
+  background: linear-gradient(to bottom, #41d4fc 0%, #209fcf 100%);
+}
+.icon-mtn:before {
+  content: "\e9f7";
+}
+.icon-mtr {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-mtr:before {
+  content: "\e9f8";
+}
+.icon-mtx {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-mtx:before {
+  content: "\e9f9";
+}
+.icon-myb {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-myb:before {
+  content: "\e9fa";
+}
+.icon-myd {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-myd:before {
+  content: "\e9fb";
+}
+.icon-myst {
+  background: linear-gradient(to bottom, #f91067 0%, #2c1398 100%);
+}
+.icon-myst:before {
+  content: "\e9fc";
+}
+.icon-nas {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-nas:before {
+  content: "\e9fd";
+}
+.icon-neo {
+  background: linear-gradient(to bottom, #aee91c 0%, #54bf02 100%);
+}
+.icon-neo:before {
+  content: "\e9fe";
+}
+.icon-net {
+  background: linear-gradient(to bottom, #e4c079 0%, #d7b62c 100%);
+}
+.icon-net:before {
+  content: "\e9ff";
+}
+.icon-nimfa {
+  background: linear-gradient(to bottom, #00e8c5 0%, #00bbd3 100%);
+}
+.icon-nimfa:before {
+  content: "\ea00";
+}
+.icon-now {
+  background: linear-gradient(to bottom, #3bee81 0%, #00ad44 100%);
+}
+.icon-now:before {
+  content: "\ea01";
+}
+.icon-npxs {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-npxs:before {
+  content: "\ea02";
+}
+.icon-nuls {
+  background: linear-gradient(to bottom, #b0fe4f 0%, #7dc326 100%);
+}
+.icon-nuls:before {
+  content: "\ea03";
+}
+.icon-nxc {
+  background: linear-gradient(to bottom, #e4c079 0%, #9c6114 100%);
+}
+.icon-nxc:before {
+  content: "\ea04";
+}
+.icon-nxx {
+  background: linear-gradient(to bottom, #70d463 0%, #8dc63f 100%);
+}
+.icon-nxx:before {
+  content: "\ea05";
+}
+.icon-oax {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-oax:before {
+  content: "\ea06";
+}
+.icon-oc {
+  background: linear-gradient(to bottom, #4399ff 0%, #002ccf 100%);
+}
+.icon-oc:before {
+  content: "\ea09";
+}
+.icon-ocn {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-ocn:before {
+  content: "\ea0d";
+}
+.icon-ohni {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-ohni:before {
+  content: "\ea11";
+}
+.icon-opt {
+  background: linear-gradient(to bottom, #e54f7d 0%, #451f86 100%);
+}
+.icon-opt:before {
+  content: "\ea12";
+}
+.icon-ost {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-ost:before {
+  content: "\ea13";
+}
+.icon-pix {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-pix:before {
+  content: "\ea14";
+}
+.icon-play {
+  background: linear-gradient(to bottom, #65e0ef 0%, #38abd7 100%);
+}
+.icon-play:before {
+  content: "\ea15";
+}
+.icon-plbt {
+  background: linear-gradient(to bottom, #069dd8 0%, #1f7995 100%);
+}
+.icon-plbt:before {
+  content: "\ea16";
+}
+.icon-plr {
+  background: linear-gradient(to bottom, #41d4fc 0%, #00bfff 100%);
+}
+.icon-plr:before {
+  content: "\ea17";
+}
+.icon-plu {
+  background: linear-gradient(to bottom, #f8d175 0%, #d1ae52 100%);
+}
+.icon-plu:before {
+  content: "\ea18";
+}
+.icon-ply {
+  background: linear-gradient(to bottom, #ffaa02 0%, #2a6cff 100%);
+}
+.icon-ply:before {
+  content: "\ea19";
+}
+.icon-poe {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-poe:before {
+  content: "\ea1a";
+}
+.icon-pos {
+  background: linear-gradient(to bottom, #8beeca 0%, #00cf87 100%);
+}
+.icon-pos:before {
+  content: "\ea1b";
+}
+.icon-pro {
+  background: linear-gradient(to bottom, #2cace2 0%, #00c8dc 100%);
+}
+.icon-pro:before {
+  content: "\ea1c";
+}
+.icon-prs {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-prs:before {
+  content: "\ea1d";
+}
+.icon-prsp {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-prsp:before {
+  content: "\ea1e";
+}
+.icon-pt {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-pt:before {
+  content: "\ea1f";
+}
+.icon-put {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-put:before {
+  content: "\ea20";
+}
+.icon-qash {
+  background: linear-gradient(to bottom, #43bbff 0%, #0047ff 100%);
+}
+.icon-qash:before {
+  content: "\ea21";
+}
+.icon-qau {
+  background: linear-gradient(to bottom, #e4c079 0%, #c09c68 100%);
+}
+.icon-qau:before {
+  content: "\ea22";
+}
+.icon-qbt {
+  background: linear-gradient(to bottom, #00ff91 0%, #7000ff 100%);
+}
+.icon-qbt:before {
+  content: "\ea23";
+}
+.icon-qrl {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-qrl:before {
+  content: "\ea24";
+}
+.icon-qsp {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-qsp:before {
+  content: "\ea25";
+}
+.icon-qun {
+  background: linear-gradient(to bottom, #61b3fa 0%, #0562cd 100%);
+}
+.icon-qun:before {
+  content: "\ea26";
+}
+.icon-rdn {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-rdn:before {
+  content: "\ea27";
+}
+.icon-req {
+  background: linear-gradient(to bottom, #6cfccd 0%, #2ed6a1 100%);
+}
+.icon-req:before {
+  content: "\ea28";
+}
+.icon-rex {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-rex:before {
+  content: "\ea29";
+}
+.icon-rlt {
+  background: linear-gradient(to bottom, #fee233 0%, #f6a027 100%);
+}
+.icon-rlt:before {
+  content: "\ea2a";
+}
+.icon-rlx {
+  background: linear-gradient(to bottom, #fde785 0%, #db0029 100%);
+}
+.icon-rlx:before {
+  content: "\ea2b";
+}
+.icon-round {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-round:before {
+  content: "\ea2c";
+}
+.icon-ruff {
+  background: linear-gradient(to bottom, #7aedd6 0%, #20c7c9 100%);
+}
+.icon-ruff:before {
+  content: "\ea2d";
+}
+.icon-rvt {
+  background: linear-gradient(to bottom, #efb823 0%, #ff6f00 100%);
+}
+.icon-rvt:before {
+  content: "\ea2f";
+}
+.icon-san {
+  background: linear-gradient(to bottom, #61b3fa 0%, #2b77b3 100%);
+}
+.icon-san:before {
+  content: "\ea30";
+}
+.icon-scl {
+  background: linear-gradient(to bottom, #61b3fa 0%, #2b77b3 100%);
+}
+.icon-scl:before {
+  content: "\ea31";
+}
+.icon-sense {
+  background: linear-gradient(to bottom, #34cbfd 0%, #b333fa 100%);
+}
+.icon-sense:before {
+  content: "\ea32";
+}
+.icon-sgel {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-sgel:before {
+  content: "\ea33";
+}
+.icon-sgt {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-sgt:before {
+  content: "\ea34";
+}
+.icon-shit {
+  background: linear-gradient(to bottom, #d7a938 0%, #ba7b50 100%);
+}
+.icon-shit:before {
+  content: "\ea35";
+}
+.icon-sift {
+  background: linear-gradient(to bottom, #61b3fa 0%, #4887f4 100%);
+}
+.icon-sift:before {
+  content: "\ea36";
+}
+.icon-smart {
+  background: linear-gradient(to bottom, #fef1be 0%, #f6cf42 100%);
+}
+.icon-smart:before {
+  content: "\ea37";
+}
+.icon-smt {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-smt:before {
+  content: "\ea38";
+}
+.icon-snc {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-snc:before {
+  content: "\ea39";
+}
+.icon-snd {
+  background: linear-gradient(to bottom, #e4c079 0%, #9c6114 100%);
+}
+.icon-snd:before {
+  content: "\ea3a";
+}
+.icon-sngls {
+  background: linear-gradient(to bottom, #ed5250 0%, #aa0e20 100%);
+}
+.icon-sngls:before {
+  content: "\ea3b";
+}
+.icon-snt {
+  background: linear-gradient(to bottom, #61b3fa 0%, #5b6dee 100%);
+}
+.icon-snt:before {
+  content: "\ea3c";
+}
+.icon-sparta {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-sparta:before {
+  content: "\ea3f";
+}
+.icon-spc {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-spc:before {
+  content: "\ea40";
+}
+.icon-sphtx {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-sphtx:before {
+  content: "\ea41";
+}
+.icon-srn {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-srn:before {
+  content: "\ea42";
+}
+.icon-stk {
+  background: linear-gradient(to bottom, #d82553 0%, #ad3873 100%);
+}
+.icon-stk:before {
+  content: "\ea43";
+}
+.icon-storm {
+  background: linear-gradient(to bottom, #fffa8c 0%, #ff9f00 100%);
+}
+.icon-storm:before {
+  content: "\ea44";
+}
+.icon-strc {
+  background: linear-gradient(to bottom, #6cfccd 0%, #2ed6a1 100%);
+}
+.icon-strc:before {
+  content: "\ea45";
+}
+.icon-sub {
+  background: linear-gradient(to bottom, #ed5250 0%, #e53431 100%);
+}
+.icon-sub:before {
+  content: "\ea46";
+}
+.icon-sxut {
+  background: linear-gradient(to bottom, #ffa900 0%, #427cff 100%);
+}
+.icon-sxut:before {
+  content: "\ea47";
+}
+.icon-syn {
+  background: linear-gradient(to bottom, #ec1f8e 0%, #d82553 100%);
+}
+.icon-syn:before {
+  content: "\ea48";
+}
+.icon-tbt {
+  background: linear-gradient(to bottom, #61b3fa 0%, #2683ff 100%);
+}
+.icon-tbt:before {
+  content: "\ea49";
+}
+.icon-tfl {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-tfl:before {
+  content: "\ea4a";
+}
+.icon-theta {
+  background: linear-gradient(to bottom, #2ee4be 0%, #2ab8e6 100%);
+}
+.icon-theta:before {
+  content: "\ea4b";
+}
+.icon-time {
+  background: linear-gradient(to bottom, #f0a44f 0%, #44a1db 100%);
+}
+.icon-time:before {
+  content: "\ea4c";
+}
+.icon-tip {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-tip:before {
+  content: "\ea4d";
+}
+.icon-tix {
+  background: linear-gradient(to bottom, #ed5250 0%, #d92a2e 100%);
+}
+.icon-tix:before {
+  content: "\ea4e";
+}
+.icon-tkn {
+  background: linear-gradient(to bottom, #8beeca 0%, #24dd7b 100%);
+}
+.icon-tkn:before {
+  content: "\ea4f";
+}
+.icon-tme {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-tme:before {
+  content: "\ea50";
+}
+.icon-tnb {
+  background: linear-gradient(to bottom, #fde785 0%, #ffd800 100%);
+}
+.icon-tnb:before {
+  content: "\ea51";
+}
+.icon-tnt {
+  background: linear-gradient(to bottom, #ff6c88 0%, #f1385b 100%);
+}
+.icon-tnt:before {
+  content: "\ea52";
+}
+.icon-tpay {
+  background: linear-gradient(to bottom, #80bcff 0%, #0006ff 100%);
+}
+.icon-tpay:before {
+  content: "\ea53";
+}
+.icon-tsl {
+  background: linear-gradient(to bottom, #65e430 0%, #067e73 100%);
+}
+.icon-tsl:before {
+  content: "\ea54";
+}
+.icon-ukg {
+  background: linear-gradient(to bottom, #f9e84d 0%, #dab700 100%);
+}
+.icon-ukg:before {
+  content: "\ea55";
+}
+.icon-trx-usdt {
+  background: linear-gradient(to bottom, #8beeca 0%, #26a17b 100%);
+}
+.icon-trx-usdt:before {
+  content: "\ea56";
+}
+.icon-vet {
+  background: linear-gradient(to bottom, #41d4fc 0%, #15bdff 100%);
+}
+.icon-vet:before {
+  content: "\ea57";
+}
+.icon-veri {
+  background: linear-gradient(to bottom, #fba000 0%, #ff9933 100%);
+}
+.icon-veri:before {
+  content: "\ea58";
+}
+.icon-vibe {
+  background: linear-gradient(to bottom, #61b3fa 0%, #338be5 100%);
+}
+.icon-vibe:before {
+  content: "\ea5a";
+}
+.icon-vibex {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-vibex:before {
+  content: "\ea5b";
+}
+.icon-viu {
+  background: linear-gradient(to bottom, #61b3fa 0%, #338be5 100%);
+}
+.icon-viu:before {
+  content: "\ea5c";
+}
+.icon-vrs {
+  background: linear-gradient(to bottom, #5bfcef 0%, #0066e5 100%);
+}
+.icon-vrs:before {
+  content: "\ea5d";
+}
+.icon-vsl {
+  background: linear-gradient(to bottom, #61b3fa 0%, #0b549b 100%);
+}
+.icon-vsl:before {
+  content: "\ea5e";
+}
+.icon-vsm {
+  background: linear-gradient(to bottom, #6cfccd 0%, #7aedd6 100%);
+}
+.icon-vsm:before {
+  content: "\ea60";
+}
+.icon-wbc {
+  background: linear-gradient(to bottom, #f68361 0%, #f14e10 100%);
+}
+.icon-wbc:before {
+  content: "\ea61";
+}
+.icon-wct {
+  background: linear-gradient(to bottom, #61b3fa 0%, #105bfb 100%);
+}
+.icon-wct:before {
+  content: "\ea62";
+}
+.icon-wic {
+  background: linear-gradient(to bottom, #efb823 0%, #ff6f00 100%);
+}
+.icon-wic:before {
+  content: "\ea63";
+}
+.icon-wpr {
+  background: linear-gradient(to bottom, #fff986 0%, #fff500 100%);
+}
+.icon-wpr:before {
+  content: "\ea65";
+}
+.icon-wtc {
+  background: linear-gradient(to bottom, #00ffdb 0%, #8300ff 100%);
+}
+.icon-wtc:before {
+  content: "\ea66";
+}
+.icon-xaur {
+  background: linear-gradient(to bottom, #e4c079 0%, #886c3c 100%);
+}
+.icon-xaur:before {
+  content: "\ea67";
+}
+.icon-xid {
+  background: linear-gradient(to bottom, #61b3fa 0%, #000082 100%);
+}
+.icon-xid:before {
+  content: "\ea68";
+}
+.icon-xnn {
+  background: linear-gradient(to bottom, #41d4fc 0%, #1dafec 100%);
+}
+.icon-xnn:before {
+  content: "\ea69";
+}
+.icon-xrl {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-xrl:before {
+  content: "\ea6a";
+}
+.icon-yupie {
+  background: linear-gradient(to bottom, #ed5250 0%, #fc3e45 100%);
+}
+.icon-yupie:before {
+  content: "\ea6b";
+}
+.icon-zst {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+
+.icon-gas {
+  background: linear-gradient(to bottom, #5ae875 0%, #c8ffbb 100%);
+}
+.icon-btt {
+  background: linear-gradient(to bottom, #e806af 0%, #a800ff 100%);
+}
+.icon-btt:before {
+  content: "\ea76";
+}
+.icon-xlm {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-xlm:before {
+  content: "\ea78";
+}
+.icon-kin {
+  background: linear-gradient(to bottom, #C05AFF 0%, #7A00E7 100%);
+}
+.icon-kin:before {
+  content: "\ea77";
+}
+
+.icon-grs {
+  background: linear-gradient(to bottom, #06FFEB 0%, #00ADA3 100%);
+}
+.icon-grs:before {
+  content: "\ea7b";
+}
+.icon-fet {
+  background: linear-gradient(to bottom, #FFFFFF 0%, #8785FF 100%);
+}
+.icon-fet:before {
+  content: "\ea85";
+}
+
+.icon-lsk {
+  background: linear-gradient(to bottom, #FFFFFF 0%, #8785FF 100%);
+}
+.icon-lsk:before {
+  content: "\ea83";
+
+}.icon-xem {
+  background: linear-gradient(to bottom, #FFAD00 0%, #00D5C3 100%);
+}
+.icon-xem:before {
+  content: "\ea7f";
+}
+.icon-waves {
+  background: linear-gradient(to bottom, #6095FF 0%, #004DE5 100%);
+}
+.icon-waves:before {
+  content: "\ea7e";
+}
+.icon-vtho {
+  background: linear-gradient(to bottom, #4BD7FD 0%, #0799D2 100%);
+}
+.icon-vtho:before {
+  content: "\ea59";
+}
+.icon-bnbTokenDefault {
+  background: linear-gradient(to bottom, #f8d175 0%, #f4c148 100%);
+}
+.icon-bnbTokenDefault:before {
+  content: "\ea82";
+}
+.icon-awc-986 {
+  background: linear-gradient(to bottom, #f8d175 0%, #f4c148 100%);
+}
+.icon-awc-986:before {
+  content: "\e946";
+}
+.icon-ont {
+  background: linear-gradient(to bottom, #58A9FF 0%, #2B85E3 100%);
+}
+.icon-ont:before {
+  content: "\ea7d";
+}
+.icon-ong {
+  background: linear-gradient(to bottom, #58A9FF 0%, #2B85E3 100%);
+}
+.icon-ong:before {
+  content: "\ea7c";
+}
+.icon-atom {
+  background: linear-gradient(to bottom, #FFFFFF 0%, #8785FF 100%);
+}
+.icon-atom:before {
+  content: "\ea86";
+}
+.icon-sent {
+  background: linear-gradient(to bottom, #129FED 0%, #004CDE 100%);
+}
+
+.icon-raven-f66 {
+  background: linear-gradient(to bottom, #f8d175 0%, #f4c148 100%);
+}
+.icon-raven-f66:before {
+  content: "\ea90";
+}
